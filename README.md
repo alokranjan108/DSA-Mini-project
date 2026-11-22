@@ -87,15 +87,17 @@ The main objective is to improve conceptual understanding of DSA through practic
 ## 📂 Project Structure
 
 ```text
-DSA-Mini-project/
-│
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-│
-└── assets/
-    └── images/
+dsa-visualizer/
+├── app.py                 Flask server + SQLite run history (/api/runs)
+├── requirements.txt
+├── README.md              this documentation
+└── static/
+    ├── index.html         app shell
+    ├── css/style.css      dark theme, responsive layout, animations
+    └── js/
+        ├── algorithms.js  pure algorithm generators (sorting, search, BST, BFS/DFS/Dijkstra)
+        ├── ui.js          Player (play/pause/step), controls, helpers
+        └── views.js       one view per module + complexity data + router
 ```
 
 *Update this structure according to your actual project files.*
